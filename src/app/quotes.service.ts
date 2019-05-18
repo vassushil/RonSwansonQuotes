@@ -9,6 +9,6 @@ export class QuotesService {
   constructor(private httpClient: HttpClient) { }
 
   public get() {
-    return this.httpClient.get('http://ron-swanson-quotes.herokuapp.com/v2/quotes');
+    return this.httpClient.get('https://ron-swanson-quotes.herokuapp.com/v2/quotes');
   }
 }
