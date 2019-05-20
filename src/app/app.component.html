@@ -1,14 +1,16 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    {{ title }}!
-  </h1>
 
-  <img width="500" alt="Ron Swanson" src="{{ image }}">
- <hr/>
 
-  <button (click)="get_quotes()">Refresh</button>
+  <!--The content below is only a placeholder and can be replaced.-->
+  <h1 class="jumbotron-heading">
+      {{ title }}!
+    </h1>
+  
+    <img width = "600" alt="Ron Swanson" src="{{ image }}" class="img-circle">
+    <hr/>
+   
+    <p class="lead muted">{{quoctes2}}</p>
+    <button (click)="get_quotes()" class="btn btn-primary">More Please!</button>
+  
+    
 
-  <h1 style="color:crimson">{{quoctes2}}</h1>
-</div>  
 <router-outlet></router-outlet>
