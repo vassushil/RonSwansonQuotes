@@ -1,0 +1,20 @@
+
+
+  <!--The content below is only a placeholder and can be replaced.-->
+  <h1 class="jumbotron-heading">
+      {{ title }}!
+    </h1>
+  
+    <img width="auto" alt="Ron Swanson" src="{{ image }}" class="img-fluid">
+    <hr/>
+   
+    <p class="lead muted">{{quoctes2}}</p>
+    <button (click)="get_quotes()" class="btn btn-primary">More Please!</button>
+        
+    <hr/>
+    <p class="lead muted">{{sentiment}}</p>
+    <button (click)="analyse_sentiment()" class="btn btn-primary">Analyse Quote Sentiment!</button>
+  
+    
+
+<router-outlet></router-outlet>
